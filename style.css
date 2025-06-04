@@ -1,0 +1,95 @@
+/* ESTILOS generales */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  overflow: hidden;
+  background-color: black;
+}
+canvas {
+  display: block;
+}
+
+/* Estilos generales MENÚ DESPLEGABLE Y GARABATO  */
+
+#menu-esferas {
+  position: fixed;
+  top: 18px;
+  left: 18px;
+  z-index: 1000;
+  pointer-events: auto;
+  background: transparent;
+  opacity: 1;
+}
+
+/* #menu-esferas.visible {
+  opacity: 1;
+} */
+.esfera {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #0004;
+}
+.esfera.verde {
+  background: #00ff50;
+}
+.esfera.beige {
+  background: #f5f5dc;
+}
+
+body {
+  background: #000;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+canvas {
+  display: block;
+}
+
+/* style.css */
+#garabato-overlay {
+    position: fixed;
+    right: 18px; /* O 0.5cm, pero usa solo uno */
+    bottom: 18px; /* O 0.5cm, pero usa solo uno */
+    width: 90px;
+    height: 90px;
+    pointer-events: auto;
+    background: transparent;
+    z-index: 1001;
+}
+html, body {
+    margin: 0;      /* Elimina todos los márgenes */
+    padding: 0;     /* Elimina todo el padding */
+    overflow: hidden; /* Evita barras de desplazamiento si el contenido se desborda */
+    width: 100%;    /* Asegura que ocupen el 100% del ancho */
+    height: 100%;   /* Asegura que ocupen el 100% del alto */
+}
+
+canvas {
+    display: block; /* Asegura que el canvas se comporte como un bloque y elimina el espacio extra */
+}
+
+/* CSS para eliminar márgenes y asegurar que el canvas ocupe toda la pantalla */
+body {
+    margin: 0; /* Elimina el margen predeterminado del body */
+    overflow: hidden; /* Oculta las barras de desplazamiento si el contenido es más grande que la ventana */
+    background-color: black; /* Asegura un fondo negro si hay algún parpadeo */
+}
+canvas {
+    display: block; /* Elimina el espacio extra debajo del canvas que a veces causa márgenes */
+}
+
